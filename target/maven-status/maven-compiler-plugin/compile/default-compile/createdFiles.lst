@@ -1,0 +1,14 @@
+mypackage\test\TestJPAHibernate.class
+mypackage\entities\Desarrollador_.class
+mypackage\entities\Desarrollador.class
+mypackage\entities\Administracion.class
+mypackage\entities\SoporteTecnico.class
+mypackage\entities\Gerente_.class
+mypackage\entities\Empleado.class
+mypackage\entities\Administracion_.class
+mypackage\utils\swing\Table.class
+mypackage\entities\Gerente.class
+mypackage\entities\SoporteTecnico_.class
+mypackage\connector\RemoteConnector.class
+mypackage\entities\Empleado_.class
+mypackage\connector\LocalConnector.class
