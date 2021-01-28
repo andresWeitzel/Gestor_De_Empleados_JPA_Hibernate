@@ -20,12 +20,20 @@
 | **Dependencia Maven** | **Finalidad** |               
 | ------------- | ------------- |
 | mysql-connector-8.0.21 |  Conexion e implementación de queries a la db con mysql |
+| Hibernate-Core 5.4.27| El Core de Hibernate|
 | JPA-Hibernate 2.1 |  Persistecia de datos a la db |
 | Javax Annotation API 1.3.2 | Api para la lectura de Annotation |
 
 * Repositorio dependencia mysql-connector: https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.21
+* Repositorio dependencia Hibernate-Core: https://search.maven.org/artifact/org.hibernate/hibernate-core/5.4.27.Final/jar
 * Repositorio dependencia JPA-Hibernate: https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.2.Final
 * Repositorio dependencia Javax Annotation API: https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api/1.3.2
+
+</br>
+
+| **Fichero de Persistencia(persistence.xml)** | **Finalidad** | 
+| <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>| Proveedor Hibernate|
+| <property name="hibernate.show_sql" value="true"/>| Listado de pasos del manejo Interno de SQL|
 
 </br>
 
