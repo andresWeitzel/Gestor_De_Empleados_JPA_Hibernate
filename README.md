@@ -32,6 +32,7 @@
 </br>
 
 | **Fichero de Persistencia(persistence.xml)** | **Finalidad** | 
+| ------------- | ------------- |
 | <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>| Proveedor Hibernate|
 | <property name="hibernate.show_sql" value="true"/>| Listado de pasos del manejo Interno de SQL|
 
@@ -48,7 +49,7 @@
 * **Collections**
 * **Etc..**
 
-## JPA-HIBERNATE
+
 
 </br>
 
