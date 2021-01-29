@@ -117,6 +117,7 @@ public class Empleado implements Serializable {
         this.cantidadHsSemanales = cantidadHsSemanales;
         this.sueldo = sueldo;
     }
+  
 
     public Integer getId() {
         return id;
