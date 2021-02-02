@@ -48,7 +48,7 @@ public class EmpleadoRepository implements I_EmpleadoRepository {
         
         entityManager.getTransaction().begin();
         
-        entityManager.remove(empleado);
+        entityManager.remove(entityManager.merge(empleado));
         
         entityManager.getTransaction().commit();
         
@@ -66,7 +66,7 @@ public class EmpleadoRepository implements I_EmpleadoRepository {
         
         entityManager.getTransaction().begin();
         
-        entityManager.persist(empleado);
+        entityManager.persist(entityManager.merge(empleado));
         
         entityManager.getTransaction().commit();
         

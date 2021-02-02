@@ -22,22 +22,13 @@ public interface I_EmpleadoRepository {
     }
 
     default Empleado getById(int id) {
+    
         return getStream()
                 .filter(objeto -> objeto.getId() == id)
                 .findAny()
                 .orElse(new Empleado());
     }
-    
-        default List<Empleado> getLikeId(String id) {
-        if (id == null) {
-            return new ArrayList<Empleado>();
-        }
-        return getStream()
-                .filter(objeto -> String.valueOf(objeto.getId())
-                .contains(id))
-                .collect(Collectors.toList());
-    }
-    
+
 
     default List<Empleado> getLikeNombre(String nombre) {
         if (nombre == null) {
@@ -65,25 +56,16 @@ public interface I_EmpleadoRepository {
                 .filter(objeto -> objeto.getEdad() == edad)
                 .collect(Collectors.toList());
     }
-    
-         default List<Empleado> getLikeEdad(String edad) {
-        if (edad == null) {
-            return new ArrayList<Empleado>();
-        }
-        return getStream()
-                .filter(objeto -> String.valueOf(objeto.getEdad())
-                .contains(edad))
-                .collect(Collectors.toList());
-    }
 
-    default List<Empleado> getLikeEdadMayorIgualQue(int edad) {
+
+        default List<Empleado> getByEdadMayorIgualQue(int edad) {
 
         return getStream()
                 .filter(objeto -> objeto.getEdad() >= edad)
                 .collect(Collectors.toList());
     }
 
-    default List<Empleado> getLikeEdadMenorIgualQue(int edad) {
+    default List<Empleado> getByEdadMenorIgualQue(int edad) {
 
         return getStream()
                 .filter(objeto -> objeto.getEdad() <= edad)
@@ -117,7 +99,7 @@ public interface I_EmpleadoRepository {
         }
          return getStream()
                 .filter(objeto -> objeto.getNumeroDocumento().toLowerCase()
-                .contains(numero_documento.toLowerCase()))
+                .startsWith(numero_documento.toLowerCase()))
                 .collect(Collectors.toList());
     }
     
@@ -128,7 +110,7 @@ public interface I_EmpleadoRepository {
         }
          return getStream()
                 .filter(objeto -> objeto.getCorreoElectronico().toLowerCase()
-                .startsWith(correo_electronico.toLowerCase()))
+                .contains(correo_electronico.toLowerCase()))
                 .collect(Collectors.toList());
     }
     
@@ -139,7 +121,7 @@ public interface I_EmpleadoRepository {
         }
            return getStream()
                 .filter(objeto -> objeto.getNumeroTelefono().toLowerCase()
-                .contains(numero_telefono.toLowerCase()))
+                .startsWith(numero_telefono.toLowerCase()))
                 .collect(Collectors.toList());
     }
     
@@ -161,16 +143,7 @@ public interface I_EmpleadoRepository {
                 .filter(objeto -> objeto.getCantidadHsSemanales() == cantidad_hs_semanales)
                 .collect(Collectors.toList());
     }
-    
-     default List<Empleado> getLikeCantidadHsSemanales(String cantidad_hs_semanales) {
-        if (cantidad_hs_semanales == null) {
-            return new ArrayList<Empleado>();
-        }
-        return getStream()
-                .filter(objeto -> String.valueOf(objeto.getCantidadHsSemanales())
-                .contains(cantidad_hs_semanales))
-                .collect(Collectors.toList());
-    }
+
  
     default List<Empleado> getBySueldo(float sueldo) {
 
@@ -178,17 +151,8 @@ public interface I_EmpleadoRepository {
                 .filter(objeto -> objeto.getSueldo() == sueldo)
                 .collect(Collectors.toList());
     }
-    
-            default List<Empleado> getLikeSueldo(String sueldo) {
-        if (sueldo == null) {
-            return new ArrayList<Empleado>();
-        }
-        return getStream()
-                .filter(objeto -> String.valueOf(objeto.getSueldo())
-                .contains(sueldo))
-                .collect(Collectors.toList());
-    }
-    
+  
+
     
     
 }
