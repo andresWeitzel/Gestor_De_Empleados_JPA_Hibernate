@@ -9,7 +9,7 @@ import mypackage.entities.Desarrollador;
 import mypackage.entities.Gerente;
 import mypackage.entities.SoporteTecnico;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-02-01T22:57:45")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-02-04T22:59:47")
 @StaticMetamodel(Empleado.class)
 public class Empleado_ { 
 

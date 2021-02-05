@@ -66,8 +66,16 @@ public interface I_DesarrolladorRepository {
                 .contains(habilidades.toLowerCase()))
                 .collect(Collectors.toList());
     }
+
+        default List<Desarrollador> getByProyectosEnProduccion(int proyectos_en_produccion){
+        
+        return getStream()
+                .filter(objeto->objeto.getProyectosEnProduccion() ==  proyectos_en_produccion)
+                .collect(Collectors.toList());
     
-    default List<Desarrollador> getLikeProyectosEnProduccionMayorQue(int proyectos_en_produccion){
+    }
+    
+    default List<Desarrollador> getByProyectosEnProduccionMayorQue(int proyectos_en_produccion){
         
         return getStream()
                 .filter(objeto->objeto.getProyectosEnProduccion()  >  proyectos_en_produccion)
