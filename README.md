@@ -23,11 +23,16 @@
 | Hibernate-Core 5.4.27| El Core de Hibernate|
 | JPA-Hibernate 2.1 |  Persistecia de datos a la db |
 | Javax Annotation API 1.3.2 | Api para la lectura de Annotation |
+| JFreeChart 1.0.131|  Generación de Gráficos |
+| JCommon  1.0.16|  Biblioteca de Clases para JFreeChart |
 
 * Repositorio dependencia mysql-connector: https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.21
 * Repositorio dependencia Hibernate-Core: https://search.maven.org/artifact/org.hibernate/hibernate-core/5.4.27.Final/jar
 * Repositorio dependencia JPA-Hibernate: https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.2.Final
 * Repositorio dependencia Javax Annotation API: https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api/1.3.2
+* Repositorio dependencia JFreeChart: https://mvnrepository.com/artifact/jfree/jfreechart/1.0.13
+* Repositorio dependencia JCommon: https://mvnrepository.com/artifact/jfree/jcommon/1.0.16
+
 
 </br>
 
@@ -62,6 +67,7 @@
 #### XAMPP:                            https://www.apachefriends.org/download.html
 #### Mysql Workbench:                 https://www.mysql.com/products/workbench/
 #### JPA-Hibernate:                   https://hibernate.org/orm/documentation/5.4/
+#### Creación de Gráficos:            http://panamahitek.com/graficando-en-java-con-jfreechart/
 
 
 </br>
