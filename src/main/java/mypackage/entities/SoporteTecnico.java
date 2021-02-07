@@ -46,6 +46,12 @@ public class SoporteTecnico implements Serializable {
     public SoporteTecnico(Integer id) {
         this.id = id;
     }
+    public SoporteTecnico(String puesto, String formacion, String certificaciones) {
+        this.puesto = puesto;
+        this.formacion = formacion;
+        this.certificaciones = certificaciones;
+        this.idEmpleados = idEmpleados;
+    }
     public SoporteTecnico(String puesto, String formacion, String certificaciones, Empleado idEmpleados) {
         this.puesto = puesto;
         this.formacion = formacion;

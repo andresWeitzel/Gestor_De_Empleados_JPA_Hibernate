@@ -42,28 +42,26 @@ public class Desarrollador implements Serializable {
     private String habilidades;
     @Column(name = "proyectos_en_produccion")
     private Integer proyectosEnProduccion;
-    @JoinColumn(name = "id_empleados", referencedColumnName = "id")
-    @OneToOne(optional = false)
-    private Empleado idEmpleados;
+    
     public Desarrollador() {
     }
     public Desarrollador(Integer id) {
         this.id = id;
     }
-    public Desarrollador(String puesto, String certificaciones, String habilidades, Integer proyectosEnProduccion, Empleado idEmpleados) {
+    public Desarrollador(String puesto, String certificaciones, String habilidades, Integer proyectosEnProduccion) {
         this.puesto = puesto;
         this.certificaciones = certificaciones;
         this.habilidades = habilidades;
         this.proyectosEnProduccion = proyectosEnProduccion;
-        this.idEmpleados = idEmpleados;
+       
     }
-    public Desarrollador(Integer id, String puesto, String certificaciones, String habilidades, Integer proyectosEnProduccion, Empleado idEmpleados) {
+    public Desarrollador(Integer id, String puesto, String certificaciones, String habilidades, Integer proyectosEnProduccion) {
         this.id = id;
         this.puesto = puesto;
         this.certificaciones = certificaciones;
         this.habilidades = habilidades;
         this.proyectosEnProduccion = proyectosEnProduccion;
-        this.idEmpleados = idEmpleados;
+        
     }
     
  
@@ -97,12 +95,7 @@ public class Desarrollador implements Serializable {
     public void setProyectosEnProduccion(Integer proyectosEnProduccion) {
         this.proyectosEnProduccion = proyectosEnProduccion;
     }
-    public Empleado getIdEmpleados() {
-        return idEmpleados;
-    }
-    public void setIdEmpleados(Empleado idEmpleados) {
-        this.idEmpleados = idEmpleados;
-    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -123,7 +116,16 @@ public class Desarrollador implements Serializable {
     }
     @Override
     public String toString() {
-        return "Desarrollador{" + "id=" + id + ", puesto=" + puesto + ", certificaciones=" + certificaciones + ", habilidades=" + habilidades + ", proyectosEnProduccion=" + proyectosEnProduccion + ", idEmpleados=" + idEmpleados + '}';
+        return "Desarrollador{" + "id=" 
+                + id + ", puesto=" 
+                + puesto
+                + ", certificaciones=" 
+                + certificaciones
+                + ", habilidades=" 
+                + habilidades 
+                + ", proyectosEnProduccion=" 
+                + proyectosEnProduccion
+                + '}';
     }
 
 

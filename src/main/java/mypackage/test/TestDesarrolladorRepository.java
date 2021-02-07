@@ -51,7 +51,7 @@ public class TestDesarrolladorRepository {
         
         //----------------------------------------DELETE----------------------------------------------------------------
 //        System.out.println("\n-------------------------Eliminamos el Desarrollador con el ID 4-----------------------------");
-//        desarrolladorRepository.remove(desarrolladorRepository.getById(4));
+//        desarrolladorRepository.remove(desarrolladorRepository.getById(3));
         
         //----------------------------------------FIN DELETE----------------------------------------------------------------
      
@@ -80,6 +80,7 @@ public class TestDesarrolladorRepository {
         
         //---------------------------------------FIN SELECT----------------------------------------------------------
 
+          entityManagerFactory.close();
         
         
         

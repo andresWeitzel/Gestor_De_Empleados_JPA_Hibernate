@@ -29,12 +29,12 @@ public interface I_DesarrolladorRepository {
                 .orElse(new Desarrollador());
     }
     
-    default Desarrollador getByIdEmpleados(int id_empleados) {
-        return getStream()
-                .filter(objeto -> objeto.getIdEmpleados().getId() == id_empleados)
-                .findAny()
-                .orElse(new Desarrollador());
-    }
+//    default Desarrollador getByIdEmpleados(int id_empleados) {
+//        return getStream()
+//                .filter(objeto -> objeto.getIdEmpleados().getId() == id_empleados)
+//                .findAny()
+//                .orElse(new Desarrollador());
+//    }
     
     
     default List<Desarrollador> getLikePuesto(String puesto) {

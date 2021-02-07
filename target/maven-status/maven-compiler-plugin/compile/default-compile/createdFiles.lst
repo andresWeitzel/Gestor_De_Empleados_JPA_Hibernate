@@ -1,3 +1,4 @@
+mypackage\repositories\jpa\SoporteTecnicoRepository.class
 mypackage\repositories\interfaces\I_EmpleadoRepository.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$2.class
 mypackage\gui\empleados\JFrameActualizarEmpleado$4.class
@@ -8,6 +9,7 @@ mypackage\gui\empleados\JFrameIngresoEmpleado$2.class
 mypackage\repositories\interfaces\I_SoporteTecnicoRepository.class
 mypackage\gui\empleados\JFrameActualizarEmpleado$1.class
 mypackage\utils\swing\Table.class
+mypackage\test\TestAdministracionRepository.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$11.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$46.class
 mypackage\entities\Desarrollador_.class
@@ -17,10 +19,12 @@ mypackage\gui\empleados\JFrameAnalyticsEmpleado$31.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$14.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$34.class
 mypackage\gui\menuInicial\JFrameGestorEmpleados_app$1.class
+mypackage\repositories\jpa\GerenteRepository.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$29.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$49.class
 mypackage\repositories\interfaces\I_AdministracionRepository.class
 mypackage\entities\Empleado_.class
+mypackage\repositories\jpa\AdministracionRepository.class
 mypackage\repositories\jpa\DesarrolladorRepository.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$40.class
 mypackage\repositories\interfaces\I_GerenteRepository.class
@@ -42,6 +46,7 @@ mypackage\gui\empleados\JFrameIngresoEmpleado$3.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$36.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$41.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$5.class
+mypackage\test\TestSoporteTecnicoRepository.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$24.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$52.class
 mypackage\gui\otros\JFrameAyuda$1.class
@@ -100,6 +105,7 @@ mypackage\gui\menuInicial\JFrameGestorEmpleados_app$3.class
 mypackage\entities\Desarrollador.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$16.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$1.class
+mypackage\test\TestGerenteRepository.class
 mypackage\entities\Administracion_.class
 mypackage\gui\empleados\JFrameAnalyticsEmpleado$39.class
 mypackage\entities\Gerente.class

@@ -75,14 +75,14 @@ public class Empleado implements Serializable {
     @Basic(optional = false)
     @Column(name = "sueldo")
     private float sueldo;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
-    private Desarrollador desarrollador;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
-    private SoporteTecnico soporteTecnico;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
-    private Gerente gerente;
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
-    private Administracion administracion;
+//    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
+//    private Desarrollador desarrollador;
+//    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
+//    private SoporteTecnico soporteTecnico;
+//    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
+//    private Gerente gerente;
+//    @OneToOne(cascade = CascadeType.ALL, mappedBy = "idEmpleados")
+//    private Administracion administracion;
     public Empleado() {
     }
     public Empleado(Integer id) {
@@ -191,30 +191,30 @@ public class Empleado implements Serializable {
     public void setSueldo(float sueldo) {
         this.sueldo = sueldo;
     }
-    public Desarrollador getDesarrollador() {
-        return desarrollador;
-    }
-    public void setDesarrollador(Desarrollador desarrollador) {
-        this.desarrollador = desarrollador;
-    }
-    public SoporteTecnico getSoporteTecnico() {
-        return soporteTecnico;
-    }
-    public void setSoporteTecnico(SoporteTecnico soporteTecnico) {
-        this.soporteTecnico = soporteTecnico;
-    }
-    public Gerente getGerente() {
-        return gerente;
-    }
-    public void setGerente(Gerente gerente) {
-        this.gerente = gerente;
-    }
-    public Administracion getAdministracion() {
-        return administracion;
-    }
-    public void setAdministracion(Administracion administracion) {
-        this.administracion = administracion;
-    }
+//    public Desarrollador getDesarrollador() {
+//        return desarrollador;
+//    }
+//    public void setDesarrollador(Desarrollador desarrollador) {
+//        this.desarrollador = desarrollador;
+//    }
+//    public SoporteTecnico getSoporteTecnico() {
+//        return soporteTecnico;
+//    }
+//    public void setSoporteTecnico(SoporteTecnico soporteTecnico) {
+//        this.soporteTecnico = soporteTecnico;
+//    }
+//    public Gerente getGerente() {
+//        return gerente;
+//    }
+//    public void setGerente(Gerente gerente) {
+//        this.gerente = gerente;
+//    }
+//    public Administracion getAdministracion() {
+//        return administracion;
+//    }
+//    public void setAdministracion(Administracion administracion) {
+//        this.administracion = administracion;
+//    }
     @Override
     public int hashCode() {
         int hash = 0;

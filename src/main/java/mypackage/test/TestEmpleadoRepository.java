@@ -49,8 +49,8 @@ public class TestEmpleadoRepository {
         //--------------------------------------FIN UPDATE-----------------------------------------------------------
         
         //----------------------------------------DELETE----------------------------------------------------------------
-//        System.out.println("\n-------------------------Eliminamos el Empleado con el ID 30-----------------------------");
-//        empleadoRepository.remove(empleadoRepository.getById(30));
+//        System.out.println("\n-------------------------Eliminamos el Empleado con el ID 28-----------------------------");
+//        empleadoRepository.remove(empleadoRepository.getById(28));
 //        
         //----------------------------------------FIN DELETE----------------------------------------------------------------
      
@@ -104,9 +104,7 @@ public class TestEmpleadoRepository {
         empleadoRepository.getBySueldo(54000).forEach(System.out::println);
 
         //---------------------------------------FIN SELECT-----------------------------------------------------
-        
-
-        
+  
         
         entityManagerFactory.close();
 
